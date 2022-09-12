@@ -17,8 +17,8 @@ public class Main {
             enterAEnterB();
 
             // to prevent a few bugs, we need to restrict the range of numbers that can be calculated
-            if ((c > 2_000_000_000) || (String.valueOf(c).length() > 9)) {
-                while ((c > 2_000_000_000) || (c > 2_000_000_000) | (c < 0)) {
+            if ((String.valueOf(c).length() > 9)) {
+                while ((String.valueOf(c).length() > 9)) {
                     System.out.println("\nNumbers are too big (product is greater than 2,000,000,000)");
                     enterAEnterB();
                 }
