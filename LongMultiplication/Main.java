@@ -112,9 +112,6 @@ public class Main {
                     }
 
                     System.out.println();
-                } else {
-                    for (int j = 0; j < jj; j++) System.out.print(" ");
-                    System.out.println(0);
                 }
 
                 l++;
