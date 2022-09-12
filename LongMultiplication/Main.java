@@ -131,7 +131,7 @@ public class Main {
             if (bChar.length > 1) {
 
                 //print final result
-                System.out.println("\n  " + c);
+                System.out.println("\n      " + c);
 
                 //draw a line
                 for (int i = 0; i < largestLength; i++)
