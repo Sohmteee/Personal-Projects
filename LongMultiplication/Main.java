@@ -70,7 +70,7 @@ public class Main {
 
         This is exactly what the block of code below does
          */
-            int l = 0;
+            int l = 1;
             for (int i = String.valueOf(b).length() - 1; i >= 0; i--) {
                 int intFormOfbChar = Integer.parseInt(String.valueOf(bChar[i])), lengthOfbChar = String.valueOf(intFormOfbChar * a).length();
 
@@ -84,7 +84,7 @@ public class Main {
                     //this specifies the number of spaces to be left before each product in such a way it's shifted one ten's place to the left
                     productToAdd = intFormOfbChar * a;
                     int lengthOfProductToAdd = String.valueOf(productToAdd).length();
-                    int jj = largestLength - 1 + l - lengthOfProductToAdd;
+                    int jj = largestLength + l - lengthOfProductToAdd;
 
                     for (int j = 0; j < largestLength; j++) System.out.print(" ");
                     for (int j = 0; j < jj; j++) System.out.print("\b");
