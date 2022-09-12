@@ -70,7 +70,7 @@ public class Main {
 
         This is exactly what the block of code below does
          */
-            int l = 0;
+            int l = -1;
             for (int i = String.valueOf(b).length() - 1; i >= 0; i--) {
                 int intFormOfbChar = Integer.parseInt(String.valueOf(bChar[i]));
                 productToAdd = intFormOfbChar * a;
