@@ -85,7 +85,6 @@ public class Main {
                     }
 
                     //this specifies the number of spaces to be left before each product in such a way it's shifted one ten's place to the left
-
                     for (int j = 0; j < jj; j++) System.out.print(" ");
                     if (i == 0) System.out.print("\b");
 
@@ -113,8 +112,8 @@ public class Main {
 
                     System.out.println();
                 } else {
-                    for (int j = 0; j < largestLength - 1; j++) System.out.print(" ");
-                    System.out.println();
+                    for (int j = 0; j < jj; j++) System.out.print(" ");
+                    System.out.println(0);
                 }
 
                 l++;
