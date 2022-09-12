@@ -72,7 +72,7 @@ public class Main {
              * and then we find the sum after relatively shifting each product to the left
              * by a tens value as shown below
              * 
-             * 615
+             *    615
              * + 492
              * 
              * This is exactly what the block of code below does
