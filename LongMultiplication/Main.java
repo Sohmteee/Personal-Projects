@@ -110,7 +110,7 @@ public class Main {
                 46800
                 -----
                  */
-                    if (((String.valueOf(productToAdd).length()) < (String.valueOf(c).length())) & (String.valueOf(checkZeros(b)).length() == 1)) {
+                    if (((String.valueOf(productToAdd).length()) < (String.valueOf(c).length())) & (String.valueOf(checkZeros(b)).length() > 0)) {
                         for (int m = 0; m < ((String.valueOf(c).length()) - (String.valueOf(productToAdd).length())); m++)
                             System.out.print("↓");
                     }
