@@ -90,7 +90,7 @@ public class Main {
                         System.out.print("+");
                     }
 
-                    
+
                     for (int j = 0; j < jj; j++)
                         System.out.print(" ");
 
@@ -145,8 +145,7 @@ public class Main {
 
     // eradicate 0's at the end of a number (100 changes to 1)
     protected static int checkZeros(int num) {
-        int reverse = reverseInt(num);
-        return reverseInt(reverse);
+        return reverseInt(reverseInt(num));
     }
 
     protected static int reverseInt(int num) {
