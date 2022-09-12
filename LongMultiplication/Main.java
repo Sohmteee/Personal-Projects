@@ -86,8 +86,7 @@ public class Main {
                     int lengthOfProductToAdd = String.valueOf(productToAdd).length();
                     int jj = largestLength + l - lengthOfProductToAdd;
 
-                    for (int j = 0; j < largestLength; j++) System.out.print(" ");
-                    for (int j = 0; j < jj; j++) System.out.print("\b");
+                    for (int j = 0; j < jj; j++) System.out.print(" ");
                     if (i == 0) System.out.print("\b");
 
                     System.out.print(productToAdd);
