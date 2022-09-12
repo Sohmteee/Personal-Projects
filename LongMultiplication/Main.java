@@ -85,7 +85,8 @@ public class Main {
                 int jj = largestLength - l - lengthOfProductToAdd;
 
                 if ((bChar.length == 1) || (String.valueOf(checkZeros(b)).length() > 0)) {
-                    System.out.print("  ");
+                    for (int j = 0; j < jj; j++)
+                        System.out.print(" ");
 
                     System.out.println(productToAdd);
                 } else if (bChar[i] != '0') {
