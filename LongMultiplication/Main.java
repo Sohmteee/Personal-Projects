@@ -59,19 +59,19 @@ public class Main {
             char[] bChar = String.valueOf(b).toCharArray();
 
             /*
-             * In a long multiplication method
-             * the first number is repeatedly multiplied by the digits of the second number
-             * starting from behind
-             * until every digit of the second number has multiplied the first one
-             * For example: 123 x 45
-             * We first do 123 x 5, and then 123 x 4,
-             * and then we find the sum after relatively shifting each product to the left
-             * by a tens value as shown below
-             * 
-             *    615
-             * + 492
-             * 
-             * This is exactly what the block of code below does
+             In a long multiplication method
+             the first number is repeatedly multiplied by the digits of the second number
+             starting from behind
+             until every digit of the second number has multiplied the first one
+             For example: 123 x 45
+             We first do 123 x 5, and then 123 x 4,
+             and then we find the sum after relatively shifting each product to the left
+             by a tens value as shown below
+             
+                615
+             + 492
+             
+             This is exactly what the block of code below does
              */
             int l = 0;
             for (int i = String.valueOf(b).length() - 1; i >= 0; i--) {
@@ -93,7 +93,9 @@ public class Main {
                         System.out.print("+");
                     }
 
-                     á
+                     /*this specifies the number of spaces to be left before
+                     each product in such a way it's shifted one ten's place
+                     to the left*/
                     for (int j = 0; j < jj; j++)
                         System.out.print(" ");
 
