@@ -3,7 +3,7 @@ package LongMultiplication;
 import java.util.Scanner;
 
 public class Main {
-    protected static int a, b, c, productToAdd;
+    protected static long a, b, c, productToAdd;
     protected static String A, B;
     protected static Scanner sc;
     protected static boolean done;
@@ -28,11 +28,11 @@ public class Main {
             }
 
             /*
-             * To make the solution more readable,
-             * the max length of characters per line is set to be the number of digits
-             * contained in the largest number amongst a, b, and c
-             * For example, if we're to multiply 23 by 34, we'll get 782
-             * 782 has the most digits of the three so the largest length will be 5 (3 + 2)
+              To make the solution more readable,
+              the max length of characters per line is set to be the number of digits
+              contained in the largest number amongst a, b, and c
+              For example, if we're to multiply 23 by 34, we'll get 782
+              782 has the most digits of the three so the largest length will be 5 (3 + 2)
              */
             int largestLength = String.valueOf(c).length() + 2;
 
@@ -93,9 +93,11 @@ public class Main {
                         System.out.print("+");
                     }
 
-                     /*this specifies the number of spaces to be left before
+                     /*
+                     this specifies the number of spaces to be left before
                      each product in such a way it's shifted one ten's place
-                     to the left*/
+                     to the left
+                     */
                     for (int j = 0; j < jj; j++)
                         System.out.print(" ");
 
@@ -116,11 +118,11 @@ public class Main {
                 System.out.print("-");
 
             /*
-             * if and only if the second number contains more than one digit will we need to
-             * use the long multiplication method.
-             * And so a final answer is needed after adding two or more products
-             * But if the second number has just one digit, this block of code will not be
-             * executed
+              if and only if the second number contains more than one digit will we need to
+              use the long multiplication method.
+              And so a final answer is needed after adding two or more products
+              But if the second number has just one digit, this block of code will not be
+              executed
              */
             if (bChar.length > 1) {
 
@@ -189,7 +191,7 @@ public class Main {
 
         // swap the values of a and b if b > a
         if ((String.valueOf(b).length()) > (String.valueOf(a).length())) {
-            int temp = a;
+            long temp = a;
             a = b;
             b = temp;
 
