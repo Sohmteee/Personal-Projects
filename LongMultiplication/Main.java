@@ -73,6 +73,9 @@ public class Main {
             int l = 0;
             for (int i = String.valueOf(b).length() - 1; i >= 0; i--) {
                 int intFormOfbChar = Integer.parseInt(String.valueOf(bChar[i]));
+                productToAdd = intFormOfbChar * a;
+                int lengthOfProductToAdd = String.valueOf(productToAdd).length();
+                int jj = largestLength - l - lengthOfProductToAdd;
 
                 if (bChar[i] != '0') {
 
@@ -82,9 +85,6 @@ public class Main {
                     }
 
                     //this specifies the number of spaces to be left before each product in such a way it's shifted one ten's place to the left
-                    productToAdd = intFormOfbChar * a;
-                    int lengthOfProductToAdd = String.valueOf(productToAdd).length();
-                    int jj = largestLength - l - lengthOfProductToAdd;
 
                     for (int j = 0; j < jj; j++) System.out.print(" ");
                     if (i == 0) System.out.print("\b");
@@ -113,6 +113,7 @@ public class Main {
 
                     System.out.println();
                 } else {
+                    for (int j = 0; j < largestLength - 1; j++) System.out.print(" ");
                     System.out.println();
                 }
 
