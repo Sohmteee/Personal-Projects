@@ -84,7 +84,7 @@ public class Main {
                 int lengthOfProductToAdd = String.valueOf(productToAdd).length();
                 int jj = largestLength - l - lengthOfProductToAdd;
 
-                if ((bChar.length == 1) & (String.valueOf(checkZeros(b)).length() == 1)) {
+                if ((bChar.length == 1) || (String.valueOf(checkZeros(b)).length() == 1)) {
                     System.out.print("  ");
 
                     System.out.println(productToAdd);
