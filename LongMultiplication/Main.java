@@ -72,7 +72,7 @@ public class Main {
          */
             int l = 0;
             for (int i = String.valueOf(b).length() - 1; i >= 0; i--) {
-                int intFormOfbChar = Integer.parseInt(String.valueOf(bChar[i])), lengthOfbChar = String.valueOf(intFormOfbChar * a).length();
+                int intFormOfbChar = Integer.parseInt(String.valueOf(bChar[i]));
 
                 if (bChar[i] != '0') {
 
