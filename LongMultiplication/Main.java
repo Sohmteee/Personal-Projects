@@ -3,7 +3,7 @@ package LongMultiplication;
 import java.util.Scanner;
 
 public class Main {
-    protected static int a, b, c, productToAdd;
+    protected static long a, b, c, productToAdd;
     protected static String A, B;
     protected static Scanner sc;
     protected static boolean done;
@@ -17,8 +17,8 @@ public class Main {
             enterAEnterB();
 
             // to prevent a few bugs, we need to restrict the range of numbers that can be calculated
-            if ((String.valueOf(c).length() > 9)) {
-                while ((String.valueOf(c).length() > 9)) {
+            if ((String.valueOf(c).length() > 18)) {
+                while ((String.valueOf(c).length() > 18)) {
                     System.out.println("\nNumbers are too big (product is greater than 999,999,999)");
                     enterAEnterB();
                 }
@@ -138,12 +138,12 @@ public class Main {
     }
 
     // eradicate 0's at the end of a number (100 changes to 1)
-    protected static int removeZeros(int num) {
+    protected static long removeZeros(long num) {
         return reverseInt(reverseInt(num));
     }
 
-    protected static int reverseInt(int num) {
-        int reverse = 0;
+    protected static long reverseInt(long num) {
+        long reverse = 0;
 
         while (num != 0) {
             reverse *= 10;
@@ -191,7 +191,7 @@ public class Main {
 
         // swap the values of a and b if b > a
         if ((String.valueOf(b).length()) > (String.valueOf(a).length())) {
-            int temp = a;
+            long temp = a;
             a = b;
             b = temp;
 
