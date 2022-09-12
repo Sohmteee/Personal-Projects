@@ -77,12 +77,14 @@ public class Main {
                 int lengthOfProductToAdd = String.valueOf(productToAdd).length();
                 int jj = largestLength - l - lengthOfProductToAdd;
 
-                if ((bChar.length == 1) || (String.valueOf(checkZeros(b)).length() > 0)) {
+                if ((bChar.length == 1) && (String.valueOf(checkZeros(b)).length() > 0)) {
                     for (int j = 0; j < jj; j++)
                         System.out.print(" ");
 
                     System.out.println(productToAdd);
-                } else if (bChar[i] != '0') {
+                }
+                
+                if (bChar[i] != '0') {
 
                     //print a "+" sign before the last product
                     if ((i == 0) & (bChar.length != 1) & (String.valueOf(checkZeros(b)).length() != 1)) {
@@ -111,7 +113,10 @@ public class Main {
                 46800
                 -----
                  */
-                    
+                    if (((String.valueOf(productToAdd).length()) < (String.valueOf(c).length())) & (String.valueOf(checkZeros(b)).length() == 1)) {
+                        for (int m = 0; m < ((String.valueOf(c).length()) - (String.valueOf(productToAdd).length())); m++)
+                            System.out.print("↓");
+                    }
 
                     System.out.println();
                 }
