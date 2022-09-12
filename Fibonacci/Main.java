@@ -14,6 +14,8 @@ public class Main {
         for (int i = 0; i < n; i++) fibonacciArray.add(getFibonacciSequence(i));
 
         System.out.println(fibonacciArray);
+
+        sc.close();
     }
 
     public static int getFibonacciSequence(int i) {
