@@ -3,7 +3,7 @@ package LongMultiplication;
 import java.util.Scanner;
 
 public class Main {
-    protected static long a, b, c, productToAdd;
+    protected static int a, b, c, productToAdd;
     protected static String A, B;
     protected static Scanner sc;
     protected static boolean done;
@@ -142,7 +142,7 @@ public class Main {
         return reverseInt(reverseInt(num));
     }
 
-    protected static long reverseInt(long num) {
+    protected static int reverseInt(long num) {
         long reverse = 0;
 
         while (num != 0) {
@@ -162,7 +162,7 @@ public class Main {
         done = false;
         while ((!done)) {
             try {
-                a = Long.parseLong(A);
+                a = Integer.parseInt(A);
                 done = true;
             } catch (NumberFormatException e) {
                 System.out.println("\na must be an integer");
@@ -180,7 +180,7 @@ public class Main {
         done = false;
         while ((!done)) {
             try {
-                b = Long.parseLong(B);
+                b = Integer.parseInt(B);
                 done = true;
             } catch (NumberFormatException e) {
                 System.out.println("\nb must be an integer");
@@ -191,7 +191,7 @@ public class Main {
 
         // swap the values of a and b if b > a
         if ((String.valueOf(b).length()) > (String.valueOf(a).length())) {
-            long temp = a;
+            int temp = a;
             a = b;
             b = temp;
 
