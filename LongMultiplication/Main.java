@@ -84,12 +84,11 @@ public class Main {
                 int lengthOfProductToAdd = String.valueOf(productToAdd).length();
                 int jj = largestLength - l - lengthOfProductToAdd;
 
-                if ((bChar.length == 1) || (String.valueOf(checkZeros(b)).length() > 0)) {
+                if ((bChar.length == 1) || (String.valueOf(removeZeros(b)).length() > 0)) {
                     // print a "+" sign before the last product
-                    if ((i == 0) & (bChar.length != 1) & (String.valueOf(checkZeros(b)).length() != 1)) {
+                    if ((i == 0) & (bChar.length != 1) & (String.valueOf(removeZeros(b)).length() != 1)) {
                         System.out.print("+");
                     }
-
 
                     for (int j = 0; j < jj; j++)
                         System.out.print(" ");
@@ -98,7 +97,7 @@ public class Main {
                 } else if (bChar[i] != '0') {
 
                     // print a "+" sign before the last product
-                    if ((i == 0) & (bChar.length != 1) & (String.valueOf(checkZeros(b)).length() != 1)) {
+                    if ((i == 0) & (bChar.length != 1) & (String.valueOf(removeZeros(b)).length() != 1)) {
                         System.out.print("+");
                     }
 
@@ -144,7 +143,7 @@ public class Main {
     }
 
     // eradicate 0's at the end of a number (100 changes to 1)
-    protected static int checkZeros(int num) {
+    protected static int removeZeros(int num) {
         return reverseInt(reverseInt(num));
     }
 
