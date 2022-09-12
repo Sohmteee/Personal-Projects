@@ -190,13 +190,12 @@ public class Main {
             }
         }
 
-        // continuously ask the user for input if b > a
-        while ((String.valueOf(b).length()) > (String.valueOf(a).length())) {
-            System.out.println("\nb must be less than or equal to a");
-            System.out.print("Enter a: ");
-            a = sc.nextInt();
-            System.out.print("Enter b: ");
-            b = sc.nextInt();
+        // swap the values of a and b if b > a
+        if ((String.valueOf(b).length()) > (String.valueOf(a).length())) {
+            int temp = a;
+            a = b;
+            b = temp;
+
         }
 
         c = a * b;
