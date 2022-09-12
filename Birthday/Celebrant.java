@@ -10,7 +10,7 @@ public class Celebrant {
 
     public void setAge(int age) {
         this.age = age;
-        System.out.println("Sohmtee is +1 today");
+        System.out.println("\nSohmtee++ today\n");
     }
 
     public int getAge() {
