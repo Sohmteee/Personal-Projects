@@ -9,6 +9,7 @@ public class Main {
         if (Day.today == Sohmtee.birthday) {
             Sohmtee.setAge(Sohmtee.getAge() + 1);
         }
+        
     }
 
 }
