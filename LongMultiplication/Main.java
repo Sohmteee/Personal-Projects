@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         sc = new Scanner(System.in);
 
-        do {
+        while (true) {
             System.out.println("\n");
             System.out.println("If a x b = c and a, b, and c are integers...");
             enterAEnterB();
@@ -112,9 +112,6 @@ public class Main {
                     }
 
                     System.out.println();
-                } else {
-                    for (int j = 0; j < largestLength - 1; j++) System.out.print(" ");
-                    System.out.println(c);
                 }
 
                 l++;
@@ -138,7 +135,7 @@ public class Main {
                 for (int i = 0; i < largestLength; i++)
                     System.out.print("-");
             }
-        } while (true);
+        }
 
     }
 
