@@ -55,8 +55,7 @@ public class Main {
                 System.out.print("-");
             System.out.println();
 
-            // convert b to an array so that we can split it and make use of its digits
-            // later
+            // convert b to an array so that we can split it and make use of its digits later
             char[] bChar = String.valueOf(b).toCharArray();
 
             /*
@@ -94,8 +93,7 @@ public class Main {
                         System.out.print("+");
                     }
 
-                    // this specifies the number of spaces to be left before each product in such a
-                    // way it's shifted one ten's place to the left
+                     á
                     for (int j = 0; j < jj; j++)
                         System.out.print(" ");
 
