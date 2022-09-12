@@ -138,12 +138,12 @@ public class Main {
     }
 
     // eradicate 0's at the end of a number (100 changes to 1)
-    protected static long removeZeros(long num) {
+    protected static int removeZeros(int num) {
         return reverseInt(reverseInt(num));
     }
 
-    protected static int reverseInt(long num) {
-        long reverse = 0;
+    protected static int reverseInt(int num) {
+        int reverse = 0;
 
         while (num != 0) {
             reverse *= 10;
