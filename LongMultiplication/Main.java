@@ -19,7 +19,7 @@ public class Main {
             // to prevent a few bugs, we need to restrict the range of numbers that can be calculated
             if ((String.valueOf(c).length() > 9)) {
                 while ((String.valueOf(c).length() > 9)) {
-                    System.out.println("\nNumbers are too big (product is greater than 2,000,000,000)");
+                    System.out.println("\nNumbers are too big (product is greater than 999,999,999)");
                     enterAEnterB();
                 }
             } else if (a < 0 | b < 0) {
