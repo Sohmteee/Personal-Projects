@@ -84,7 +84,7 @@ public class Main {
                     //this specifies the number of spaces to be left before each product in such a way it's shifted one ten's place to the left
                     productToAdd = intFormOfbChar * a;
                     int lengthOfProductToAdd = String.valueOf(productToAdd).length();
-                    int jj = largestLength + l - lengthOfProductToAdd;
+                    int jj = largestLength - l - lengthOfProductToAdd;
 
                     for (int j = 0; j < jj; j++) System.out.print(" ");
                     if (i == 0) System.out.print("\b");
