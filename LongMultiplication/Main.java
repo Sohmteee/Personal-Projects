@@ -162,7 +162,7 @@ public class Main {
         done = false;
         while ((!done)) {
             try {
-                a = Integer.parseInt(A);
+                a = Long.parseLong(A);
                 done = true;
             } catch (NumberFormatException e) {
                 System.out.println("\na must be an integer");
@@ -180,7 +180,7 @@ public class Main {
         done = false;
         while ((!done)) {
             try {
-                b = Long.parseInt(B);
+                b = Long.parseLong(B);
                 done = true;
             } catch (NumberFormatException e) {
                 System.out.println("\nb must be an integer");
