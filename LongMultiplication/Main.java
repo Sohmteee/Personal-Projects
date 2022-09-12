@@ -16,17 +16,14 @@ public class Main {
             System.out.println("If a x b = c and a, b, and c are integers...");
             enterAEnterB();
 
-            // to prevent a few bugs, we need to restrict the range of numbers that can be
-            // calculated
+            // to prevent a few bugs, we need to restrict the range of numbers that can be calculated
             if ((c > 100000000)) {
                 while ((c > 100000000) | (c < 0)) {
-                    System.out.println();
-                    System.out.println("Numbers are too big (product is greater than one hundred million)");
+                    System.out.println("\nNumbers are too big (product is greater than one hundred million)");
                     enterAEnterB();
                 }
             } else if (a < 0 | b < 0) {
-                System.out.println();
-                System.out.println("Number's shouldn't be negative for now");
+                System.out.println("\nNumber's shouldn't be negative for now");
                 enterAEnterB();
             }
 
