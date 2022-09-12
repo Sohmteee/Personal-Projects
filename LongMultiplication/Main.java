@@ -180,7 +180,7 @@ public class Main {
         done = false;
         while ((!done)) {
             try {
-                b = Integer.parseInt(B);
+                b = Long.parseInt(B);
                 done = true;
             } catch (NumberFormatException e) {
                 System.out.println("\nb must be an integer");
