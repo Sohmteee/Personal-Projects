@@ -171,8 +171,6 @@ public class Main {
             }
         }
 
-        System.out.println();
-
         System.out.print("Enter b: ");
         B = sc.next();
 
