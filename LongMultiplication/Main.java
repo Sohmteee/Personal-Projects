@@ -78,11 +78,11 @@ public class Main {
                 int intFormOfbChar = Integer.parseInt(String.valueOf(bChar[i]));
                 productToAdd = intFormOfbChar * a;
                 int lengthOfProductToAdd = String.valueOf(productToAdd).length();
-                int jj = largestLength - l - lengthOfProductToAdd;
+                int numberOfSpaces = largestLength - l - lengthOfProductToAdd;
 
                 if ((bChar.length == 1) || (String.valueOf(removeZeros(b)).length() == 1)) {
 
-                    for (int j = 0; j < jj; j++)
+                    for (int j = 0; j < numberOfSpaces; j++)
                         System.out.print(" ");
 
                     System.out.println(productToAdd);
@@ -98,7 +98,7 @@ public class Main {
                      each product in such a way it's shifted one ten's place
                      to the left
                      */
-                    for (int j = 0; j < jj; j++)
+                    for (int j = 0; j < numberOfSpaces; j++)
                         System.out.print(" ");
 
                     if (i == 0)
