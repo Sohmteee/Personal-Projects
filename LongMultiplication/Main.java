@@ -80,7 +80,7 @@ public class Main {
                 int lengthOfProductToAdd = String.valueOf(productToAdd).length();
                 int jj = largestLength - l - lengthOfProductToAdd;
 
-                if ((bChar.length == 1) && (String.valueOf(removeZeros(b)).length() > 0)) {
+                if ((bChar.length == 1) || (String.valueOf(removeZeros(b)).length() == 1)) {
 
                     for (int j = 0; j < jj; j++)
                         System.out.print(" ");
