@@ -14,17 +14,17 @@ public class Main {
         while (true) {
             System.out.println("\n");
             System.out.println("If a x b = c and a, b, and c are integers...");
-            enterAEnterB();
+            enterOperands();
 
             // to prevent a few bugs, we need to restrict the range of numbers that can be calculated
             if ((String.valueOf(c).length() > 9)) {
                 while ((String.valueOf(c).length() > 9)) {
                     System.out.println("\nNumbers are too big (product is greater than 999,999,999)");
-                    enterAEnterB();
+                    enterOperands();
                 }
             } else if (a < 0 | b < 0) {
                 System.out.println("\nNumber's shouldn't be negative for now");
-                enterAEnterB();
+                enterOperands();
             }
 
             /*
@@ -154,7 +154,7 @@ public class Main {
         return reverse;
     }
 
-    protected static void enterAEnterB() {
+    protected static void enterOperands() {
         System.out.print("Enter a: ");
         A = sc.next();
 
