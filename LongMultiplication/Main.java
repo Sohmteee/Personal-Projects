@@ -3,10 +3,10 @@ package LongMultiplication;
 import java.util.Scanner;
 
 public class Main {
-    protected static int a, b, c, productToAdd;
-    protected static String A, B;
-    protected static Scanner sc;
-    protected static boolean done;
+    private static int a, b, c, productToAdd;
+    private static String A, B;
+    private static Scanner sc;
+    private static boolean done;
 
     public static void main(String[] args) {
         sc = new Scanner(System.in);
@@ -138,11 +138,11 @@ public class Main {
     }
 
     // eradicate 0's at the end of a number (100 changes to 1)
-    protected static int removeZeros(int num) {
+    private static int removeZeros(int num) {
         return reverseInt(reverseInt(num));
     }
 
-    protected static int reverseInt(int num) {
+    private static int reverseInt(int num) {
         int reverse = 0;
 
         while (num != 0) {
@@ -154,7 +154,7 @@ public class Main {
         return reverse;
     }
 
-    protected static void enterOperands() {
+    private static void enterOperands() {
         System.out.print("Enter a: ");
         A = sc.next();
 
