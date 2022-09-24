@@ -1,8 +1,10 @@
 package Birthday;
 
+import java.time.LocalDate;
+
 public class Celebrant {
     int age;
-    int birthday = 1;
+    LocalDate birthday = LocalDate.of(2003, 10, 1);
 
     public Celebrant(int age) {
         this.age = age;

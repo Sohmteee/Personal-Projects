@@ -1,12 +1,17 @@
 package Birthday;
 
+import java.time.LocalDate;
+
 public class Main {
-    public static Celebrant Sohmtee = new Celebrant(18);
-    public static Day Day = new Day();
 
     public static void main(String[] args) {
+        Celebrant Sohmtee = new Celebrant(18);
+        LocalDate today = LocalDate.now();
 
-        if (Day.today == Sohmtee.birthday) {
+        boolean todayIsBirthday = (today.getDayOfMonth() == Sohmtee.birthday.getDayOfMonth())
+                && (today.getMonth() == Sohmtee.birthday.getMonth());
+
+        if (todayIsBirthday) {
             Sohmtee.setAge(Sohmtee.getAge() + 1);
         }
 
